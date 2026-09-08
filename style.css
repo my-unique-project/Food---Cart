@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#main-header {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    font-family: "Pacifico", cursive;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 100px;
+    height: 80px;
+    background-color: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+#my-content {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    /* background-color: black; */
+}
+
+body {
+    font-family: "Urbanist", sans-serif;
+}
+
+#food-name {
+    cursor: pointer;
+    width: 30vw;
+    margin: 20px 0px 10px 0px;
+    position: relative;
+    color: rgb(1, 7, 110);
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgb(193, 193, 196);
+}
+#food-name:hover{
+     box-shadow: 0px 4px 8px rgb(255, 201, 5);
+}
+
+#item-text {
+    padding: 0px 0px 10px 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h5 {
+    color: rgb(53, 53, 53);
+}
+
+#btn {
+    font-family: "Urbanist", sans-serif;
+    cursor: pointer;
+    width: 100px;
+    border: 0px;
+    border-radius: 20px;
+    outline: none;
+    height: 40px;
+    right: 15px;
+    bottom: 15px;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    color: goldenrod;
+    transition: 0.3s;
+}
+
+#btn:hover {
+    color: aliceblue;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+#cart-container {
+    background-color: beige;
+}
+
+/* 
+#img {
+    overflow: hidden;
+    display: flex;
+    width: 400px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: blue;
+} */
+
+img {
+
+    width: 100%;
+    height: 300px;
+}
+@media only screen and (max-width:500px){
+    #main-header {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    font-family: "Pacifico", cursive;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 50px;
+    height: 80px;
+    background-color: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+#food-name {
+    cursor: pointer;
+    width: 90vw;
+    margin: 20px 0px 10px 0px;
+    position: relative;
+    color: rgb(1, 7, 110);
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgb(193, 193, 196);
+}
+h1 {
+    font-size: 2rem;
+}
+
+h5 {
+     font-size: 0.6rem;
+    color: rgb(53, 53, 53);
+}
+
+#btn {
+    font-family: "Urbanist", sans-serif;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 20px;
+    outline: none;
+    height: 40px;
+    width: 90px;
+    font-size: 0.8rem;
+    right: 10px;
+    bottom: 15px;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    color: goldenrod;
+    transition: 0.3s;
+}
+}
