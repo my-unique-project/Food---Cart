@@ -1,4 +1,4 @@
-let my_content = document.querySelector("#my-content");
+    let my_content = document.querySelector("#my-content");
 let body = document.querySelector("body");
 let food = [
     {
@@ -41,7 +41,7 @@ my_content.innerHTML = food.map(
     (item) => {
         return `<div id="food-name">
         <img src="${item.image}">
-      <div id="item-text">  <h1>${item.name}</h1>
+     <hr> <div id="item-text">  <h1>${item.name}</h1>
         <h3>Price : ${item.price}/-</h3>
                <h5>Shop Name : ${item.shop}</h5></div>
         <button id="btn" onclick="addToCart('${item.name}')">Add to Cart</button>
@@ -53,7 +53,6 @@ let cart = [];
 let cartContainer = document.createElement("div");
 cartContainer.id = "cart-container";
 body.appendChild(cartContainer);
-
 function addToCart(userSelected) {
     let selectedItem = food.find(
         (target) => {
@@ -77,8 +76,9 @@ function addToCart(userSelected) {
     showCart();
 }
 function showCart() {
+    
     let totalPrice = 0;
-    let cartHTML = `Your Cart`;
+    let cartHTML = `<p id="h">Your Cart</p>`;
     cartHTML += `
     <table>
     <tr>
@@ -94,15 +94,16 @@ function showCart() {
             cartHTML += `<tr>
     <td>${check.name}</td>
     <td>${check.quantity}</td>
-    <td>${itemPrice}</td>
+    <td>Rs ${itemPrice}/-</td>
     </tr>`
         }
     );
     cartHTML += `
-<tr>
-    <td>---</td>
-    <td>---</td>
-    <td>${totalPrice}</td>
+<tr style="color:rgba(127, 0, 0, 1);
+        z-index: 1;">
+    <td>-</td>
+    <td>-</td>
+    <td><b>Rs ${totalPrice}/-</b></td>
     </tr>
     </table>`;
     cartContainer.innerHTML = cartHTML;
