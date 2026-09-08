@@ -122,20 +122,32 @@ img {
         z-index: 1;
     }
 
+    #my-content {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        /* background-color: black; */
+    }
+
     #food-name {
         cursor: pointer;
         width: 90vw;
-        margin: 20px 0px 10px 0px;
+        margin: 10px 0px 0px 0px;
         position: relative;
         color: rgb(1, 7, 110);
-        border-radius: 30px;
+        border-radius: 20px;
         overflow: hidden;
         box-shadow: 0px 4px 8px rgb(193, 193, 196);
-        
+
     }
-#food-name{
-    -webkit-tap-highlight-color: transparent;
-}
+
+    #food-name {
+        -webkit-tap-highlight-color: transparent;
+    }
+
     h1 {
         font-size: 1.5rem;
     }
@@ -164,6 +176,11 @@ img {
         background-color: rgb(0, 0, 0);
         color: goldenrod;
         transition: 0.3s;
+    }
+
+    #btn:active {
+        color: aliceblue;
+        color: rgb(46, 46, 46);
     }
 
     #item-text {
