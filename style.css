@@ -43,8 +43,9 @@ body {
     overflow: hidden;
     box-shadow: 0px 4px 8px rgb(193, 193, 196);
 }
-#food-name:hover{
-     box-shadow: 0px 4px 8px rgb(255, 201, 5);
+
+#food-name:hover {
+    box-shadow: 0px 4px 8px rgb(255, 201, 5);
 }
 
 #item-text {
@@ -104,54 +105,68 @@ img {
     width: 100%;
     height: 300px;
 }
-@media only screen and (max-width:500px){
+
+@media only screen and (max-width:500px) {
     #main-header {
-    width: 100%;
-    position: fixed;
-    top: 0px;
-    font-family: "Pacifico", cursive;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    padding: 0px 0px 0px 50px;
-    height: 80px;
-    background-color: rgb(34, 34, 34);
-    color: rgb(255, 255, 255);
-    z-index: 1;
-}
-#food-name {
-    cursor: pointer;
-    width: 90vw;
-    margin: 20px 0px 10px 0px;
-    position: relative;
-    color: rgb(1, 7, 110);
-    border-radius: 30px;
-    overflow: hidden;
-    box-shadow: 0px 4px 8px rgb(193, 193, 196);
-}
-h1 {
-    font-size: 2rem;
-}
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        font-family: "Pacifico", cursive;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        padding: 0px 0px 0px 50px;
+        height: 80px;
+        background-color: rgb(34, 34, 34);
+        color: rgb(255, 255, 255);
+        z-index: 1;
+    }
 
-h5 {
-     font-size: 0.6rem;
-    color: rgb(53, 53, 53);
+    #food-name {
+        cursor: pointer;
+        width: 90vw;
+        margin: 20px 0px 10px 0px;
+        position: relative;
+        color: rgb(1, 7, 110);
+        border-radius: 30px;
+        overflow: hidden;
+        box-shadow: 0px 4px 8px rgb(193, 193, 196);
+        
+    }
+#food-name{
+    -webkit-tap-highlight-color: transparent;
 }
+    h1 {
+        font-size: 1.5rem;
+    }
 
-#btn {
-    font-family: "Urbanist", sans-serif;
-    cursor: pointer;
-    border: 0px;
-    border-radius: 20px;
-    outline: none;
-    height: 40px;
-    width: 90px;
-    font-size: 0.8rem;
-    right: 10px;
-    bottom: 15px;
-    position: absolute;
-    background-color: rgb(0, 0, 0);
-    color: goldenrod;
-    transition: 0.3s;
-}
+    h3 {
+        font-size: 1rem;
+    }
+
+    h5 {
+        font-size: 0.6rem;
+        color: rgb(53, 53, 53);
+    }
+
+    #btn {
+        font-family: "Urbanist", sans-serif;
+        cursor: pointer;
+        border: 0px;
+        border-radius: 20px;
+        outline: none;
+        height: 40px;
+        width: 90px;
+        font-size: 0.8rem;
+        right: 10px;
+        bottom: 15px;
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        color: goldenrod;
+        transition: 0.3s;
+    }
+
+    #item-text {
+        padding: 0px 0px 10px 15px;
+    }
 }
