@@ -1,5 +1,6 @@
 let my_content = document.querySelector("#my-content");
 let body = document.querySelector("body");
+let myCart = document.querySelector("#my-cart");
 let food = [
     {
         name: "Pizza",
@@ -42,18 +43,20 @@ my_content.innerHTML = food.map(
         return `<div id="food-name">
         <img src="${item.image}">
      <hr> <div id="item-text">  <h1>${item.name}</h1>
-        <h3>Price : ${item.price}/-</h3>
+        <h3>Rs : ${item.price}/-</h3>
                <h5>Shop Name : ${item.shop}</h5></div>
         <button id="btn" onclick="addToCart('${item.name}')">Add to Cart</button>
         </div>`
     }
 ).join("");
 let cart = [];
+let totalQuantity = 0;
 
 let cartContainer = document.createElement("div");
 cartContainer.id = "cart-container";
 body.appendChild(cartContainer);
 cartContainer.style.display = "none";
+
 function addToCart(userSelected) {
     let selectedItem = food.find(
         (target) => {
@@ -77,8 +80,8 @@ function addToCart(userSelected) {
     showCart();
 }
 function showCart() {
-
     let totalPrice = 0;
+    totalQuantity = 0;
     let cartHTML = `<p id="h">Your Cart</p>`;
     cartHTML += `
     <table>
@@ -91,7 +94,7 @@ function showCart() {
         (check) => {
             let itemPrice = check.price * check.quantity;
             totalPrice += itemPrice;
-
+            totalQuantity += check.quantity;
             cartHTML += `<tr>
     <td>${check.name}</td>
     <td>${check.quantity}</td>
@@ -108,5 +111,10 @@ function showCart() {
     </tr>
     </table>`;
     cartContainer.innerHTML = cartHTML;
-    cartContainer.style.display = "flex";
+    myCart.innerHTML = `Cart Item ${totalQuantity}`;
 }
+myCart.addEventListener("click",
+    () => {
+        cartContainer.style.display = "flex";
+    }
+)
