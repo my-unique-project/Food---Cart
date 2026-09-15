@@ -55,6 +55,8 @@ let totalQuantity = 0;
 let cartContainer = document.createElement("div");
 cartContainer.id = "cart-container";
 body.appendChild(cartContainer);
+
+
 cartContainer.style.display = "none";
 
 function addToCart(userSelected) {
@@ -80,9 +82,11 @@ function addToCart(userSelected) {
     showCart();
 }
 function showCart() {
+    
     let totalPrice = 0;
     totalQuantity = 0;
-    let cartHTML = `<p id="h">Your Cart</p>`;
+    let cartHTML = `<p id="your-cart-selector">Your Cart</p>
+     <button id="del-btn" onclick="clearCart()">Clear Cart</button>`;
     cartHTML += `
     <table>
     <tr>
@@ -111,10 +115,14 @@ function showCart() {
     </tr>
     </table>`;
     cartContainer.innerHTML = cartHTML;
-    myCart.innerHTML = `Cart Item ${totalQuantity}`;
+    myCart.innerHTML = ` ${totalQuantity}`;
 }
 myCart.addEventListener("click",
     () => {
+        if(cart.length===0){
+        alert("No item added");
+        return;
+    }
         cartContainer.style.display = "flex";
     }
 )
