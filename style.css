@@ -205,6 +205,11 @@ hr {
         background: rgb(255, 247, 247);
         color: rgb(201, 1, 1);
     }
+    #my-cart:hover {
+    color: #FF0000;
+    background-color: #000000;
+    font-size: 0.6rem;
+}
 
     #my-content {
         margin-top: 80px;
@@ -328,8 +333,24 @@ hr {
         }
     }
 
-    #h {
+    #your-cart-selector {
         font-size: 1.5rem;
         padding: 10px 0px 10px 20px;
+    }
+    #del-btn{
+        position: fixed;
+        top: 20px;
+        right: 15px;
+        border: 0px;
+        outline: none;
+        border-radius: 10px;
+        width: 80px;
+        height: 30px;
+        color: #FFFFFF;
+        background-color: #B80B0B;
+    }
+    #del-btn:active{
+        color: #B30E0E;
+        background: #000000;
     }
 }
