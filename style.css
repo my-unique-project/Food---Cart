@@ -231,16 +231,17 @@ hr {
 
 @media only screen and (max-width:500px) {
     #main-header {
+        background-image: linear-gradient(to left ,#0A7604,#C2DCC1);
         width: 100%;
         position: fixed;
         top: 0px;
         font-family: "Montserrat", sans-serif;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         display: flex;
         align-items: center;
         padding: 0px 30px 0px 30px;
         height: 80px;
-        color: #caf9e4;
+        color: #053620;
         z-index: 2;
     }
 
@@ -375,8 +376,9 @@ hr {
     #item-text {
         position: absolute;
         z-index: 1;
-        bottom: 0px;
-        padding: 0px 0px 10px 20px;
+        bottom: 15px;
+        left: 20px;
+        
     }
 
     img {
