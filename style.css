@@ -230,26 +230,33 @@ hr {
 }
 
 @media only screen and (max-width:500px) {
+    body{
+        background-image: linear-gradient(#D9E4DA,#B0E6B5);
+    }
     #main-header {
-        background-image: linear-gradient(to left ,#0A7604,#C2DCC1);
-        width: 100%;
+        background-image: linear-gradient(to right,#EFFEF7,#017951);
+        margin: 0px auto ;
+        left: 0;
+        right: 0;
+        width: 90%;
         position: fixed;
-        top: 0px;
-        font-family: "Montserrat", sans-serif;
+        top: 10px;
+        font-family: "Playwrite CU Guides", cursive;
         font-size: 1.2rem;
         display: flex;
         align-items: center;
         padding: 0px 30px 0px 30px;
         height: 80px;
-        color: #053620;
+        border-radius: 50px;
+        color: #0E6518;
         z-index: 2;
     }
 
     #my-cart {
-        border: 1px solid rgb(2, 224, 24);
+        border: 0.1vw solid rgb(2, 224, 24);
         color: #000000;
         background-color: #ffffff;
-        box-shadow: 0px 1px 3px rgb(35, 216, 144);
+        box-shadow: 0px 1px 3px rgba(0, 64, 39, 1);
         transition: 0.4s;
         font-family: "Montserrat", sans-serif;
         display: flex;
@@ -275,32 +282,31 @@ hr {
     }
 
     #my-content {
-        margin-top: 80px;
+        margin-top: 90px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        position: relative;
-        min-height: 100vh;
+        background-image: linear-gradient(#D9E4DA,#B0E6B5);
     }
+#my-content::before {
+    content: "";
+    position: fixed;
+    /* ব্যাকগ্রাউন্ড স্ক্রিনের সাথে ফিক্সড রাখার জন্য */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    /* এখানে ব্লার এর পরিমাণ (px) আপনার পছন্দমত পরিবর্তন করতে পারবেন */
+    z-index: -1;
+    /* জাতে ব্লার হওয়া ব্যাকগ্রাউন্ডটি ফুড কার্ডগুলোর পেছনে থাকে */
+}
 
-    #my-content::before {
-        content: "";
-        position: fixed;
-        /* ব্যাকগ্রাউন্ড স্ক্রিনের সাথে ফিক্সড রাখার জন্য */
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(transparent, black), url("https://cdn.magicdecor.in/com/2023/11/15105952/Fast-Food-Wallpaper-Design-For-Restaurants-and-Hotels.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        filter: blur(3px);
-        /* এখানে ব্লার এর পরিমাণ (px) আপনার পছন্দমত পরিবর্তন করতে পারবেন */
-        z-index: -1;
-        /* জাতে ব্লার হওয়া ব্যাকগ্রাউন্ডটি ফুড কার্ডগুলোর পেছনে থাকে */
-    }
 
     #food-name {
         cursor: pointer;
@@ -357,7 +363,8 @@ hr {
         right: 10px;
         bottom: 15px;
         position: absolute;
-        background-color: rgb(5, 122, 46);
+        background-image: linear-gradient(#012515,#098B60);
+        
         color: rgb(226, 245, 235);
         transition: 0s;
         z-index: 1
@@ -398,14 +405,15 @@ hr {
     }
 
     td {
-        border-bottom: 1px solid rgb(255, 252, 252);
+        color: #000000;
+        border-bottom: 1px solid rgba(0, 0, 0, 1);
         padding: 10px;
     }
 
     th {
         height: 45px;
         color: #FFFFFF;
-        background: rgba(0, 0, 0, 1);
+        background: rgba(0, 78, 56, 1);
     }
 
     #cart-container {
@@ -416,7 +424,7 @@ hr {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: rgb(5, 153, 111);
+        background-color: rgba(210, 255, 242, 1);
         animation-name: cart;
         animation-duration: 0.5s;
         z-index: 2;
@@ -430,7 +438,7 @@ hr {
     }
 
     #your-cart-selector {
-        color: #ffffff;
+        color: #000000;
         font-size: 1.5rem;
         padding: 10px 0px 10px 20px;
     }
