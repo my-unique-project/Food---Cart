@@ -230,12 +230,13 @@ hr {
 }
 
 @media only screen and (max-width:500px) {
-    body{
-        background-image: linear-gradient(#D9E4DA,#B0E6B5);
+    body {
+        background-image: linear-gradient(#D9E4DA, #038010);
     }
+
     #main-header {
-        background-image: linear-gradient(to right,#EFFEF7,#017951);
-        margin: 0px auto ;
+        background-image: linear-gradient(to right, #EFFEF7, #017951);
+        margin: 0px auto;
         left: 0;
         right: 0;
         width: 90%;
@@ -281,31 +282,62 @@ hr {
         font-size: 0.7rem;
     }
 
+    #intro {
+        margin-top: 15vh;
+        background-image: linear-gradient(#ffffff00, #83d4a3, #d9e4da14);
+
+    }
+
+    #intro-heading {
+        font-family: "Montserrat", sans-serif;
+        padding: 0px 50px 20px 50px;
+        font-size: 3rem;
+        color: #064615;
+        background-image: linear-gradient(green, rgb(46, 62, 27));
+        background-clip: text;
+        color: transparent;
+    }
+
+    #description {
+        font-family: "Montserrat", sans-serif;
+        padding: 0px 50px 20px 50px;
+        font-size: 1.2rem;
+        color: #03250c;
+    }
+
+    #menu {
+        color: #012515;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.7rem;
+    }
+
     #my-content {
-        margin-top: 90px;
+        margin-top: 20px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        background-image: linear-gradient(#D9E4DA,#B0E6B5);
+        background-image: linear-gradient(transparent, #D9E4DA, #131714);
     }
-#my-content::before {
-    content: "";
-    position: fixed;
-    /* ব্যাকগ্রাউন্ড স্ক্রিনের সাথে ফিক্সড রাখার জন্য */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: none;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    filter: blur(3px);
-    /* এখানে ব্লার এর পরিমাণ (px) আপনার পছন্দমত পরিবর্তন করতে পারবেন */
-    z-index: -1;
-    /* জাতে ব্লার হওয়া ব্যাকগ্রাউন্ডটি ফুড কার্ডগুলোর পেছনে থাকে */
-}
+
+    #my-content::before {
+        content: "";
+        position: fixed;
+        /* ব্যাকগ্রাউন্ড স্ক্রিনের সাথে ফিক্সড রাখার জন্য */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: none;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: blur(3px);
+        /* এখানে ব্লার এর পরিমাণ (px) আপনার পছন্দমত পরিবর্তন করতে পারবেন */
+        z-index: -1;
+        /* জাতে ব্লার হওয়া ব্যাকগ্রাউন্ডটি ফুড কার্ডগুলোর পেছনে থাকে */
+    }
 
 
     #food-name {
@@ -363,8 +395,8 @@ hr {
         right: 10px;
         bottom: 15px;
         position: absolute;
-        background-image: linear-gradient(#012515,#098B60);
-        
+        background-image: linear-gradient(#012515, #098B60);
+
         color: rgb(226, 245, 235);
         transition: 0s;
         z-index: 1
@@ -385,7 +417,7 @@ hr {
         z-index: 1;
         bottom: 15px;
         left: 20px;
-        
+
     }
 
     img {
