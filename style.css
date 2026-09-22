@@ -284,7 +284,7 @@ hr {
 
     #intro {
         margin-top: 15vh;
-        background-image: linear-gradient(#ffffff00, #83d4a3, #d9e4da14);
+        background-image: linear-gradient(#ffffff00, #8ad7a9, #d9e4da14);
 
     }
 
@@ -293,14 +293,14 @@ hr {
         padding: 0px 50px 20px 50px;
         font-size: 3rem;
         color: #064615;
-        background-image: linear-gradient(green, rgb(46, 62, 27));
+        background-image: linear-gradient(rgb(9, 124, 9), rgb(46, 62, 27));
         background-clip: text;
         color: transparent;
     }
 
     #description {
         font-family: "Montserrat", sans-serif;
-        padding: 0px 50px 20px 50px;
+        padding: 0px 20px 20px 20px;
         font-size: 1.2rem;
         color: #03250c;
     }
