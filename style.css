@@ -15,7 +15,6 @@
     padding: 0px 100px 0px 100px;
     height: 90px;
     background-color: #01512d;
-    /* background-image: linear-gradient(220deg, rgb(255, 255, 251), rgb(9, 151, 42), rgb(252, 251, 250)); */
     z-index: 2;
     color: #caf9e4;
 }
@@ -225,13 +224,18 @@ hr {
 }
 
 @media only screen and (max-width:500px) {
-    body {
-        background-image: linear-gradient(#D9E4DA, #038010);
+    * {
+        box-sizing: border-box;
     }
 
+    /* 
+    body {
+      background-image: linear-gradient( #D9E4DA, #131714,transparent);
+    } */
+
     #main-header {
-        border: 1px solid rgb(117, 122, 117);
-        box-shadow: inset 1px 1px 10px rgb(134, 195, 124);
+        border: 0.1vw solid rgba(0, 0, 0, 0.373);
+        box-shadow: inset 1px 1px 10px rgb(3, 81, 56);
         background: transparent;
         backdrop-filter: blur(10px);
         margin: 0px auto;
@@ -246,7 +250,7 @@ hr {
         padding: 0px 30px 0px 30px;
         height: 80px;
         border-radius: 50px;
-        color: #064506;
+        color: #000000;
         z-index: 2;
         font-family: "Original Surfer", sans-serif;
     }
@@ -281,30 +285,55 @@ hr {
     }
 
     #intro {
+        height: 50vh;
+        position: relative;
         margin-top: 15vh;
-        background-image: linear-gradient(#ffffff00, #8ad7a9, #d9e4da14);
+        background-color: #000000;
+    }
 
+    #food-intro {
+        filter: blur(2px);
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    #intro::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        height: 250px;
+        width: 100%;
+        background-image: linear-gradient(transparent, black);
     }
 
     #intro-heading {
-        padding: 0px 50px 20px 50px;
-        font-size: 3rem;
-        color: #064615;
-        background-image: linear-gradient(rgb(9, 124, 9), rgb(46, 62, 27));
-        background-clip: text;
-        color: transparent;
+        position: absolute;
+        left: 35px;
+        right: 25px;
+        top: 60px;
+        font-size: 2.8rem;
+        color: white;
         font-family: "Quicksand", sans-serif;
+        z-index: 1;
     }
 
     #description {
-        padding: 0px 20px 50px 40px;
+        position: absolute;
+        bottom: 30px;
+        left: 40px;
+        right: 20px;
         font-size: 1.2rem;
-        color: #03250c;
+        color: #e3ebe5;
         font-family: "Quicksand", sans-serif;
+        z-index: 1;
     }
 
     #menu {
-        color: #012515;
+        position: absolute;
+        color: #deebe5;
         text-align: center;
         font-size: 1.7rem;
         font-family: "Cabin", sans-serif;
@@ -316,7 +345,8 @@ hr {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        background-image: linear-gradient(transparent, #D9E4DA, #131714);
+        /* background-image: linear-gradient(transparent, #D9E4DA, #131714);
+        background-attachment: fixed; */
     }
 
     #my-content::before {
