@@ -8,7 +8,6 @@
     width: 100%;
     position: fixed;
     top: 0px;
-    font-family: "Montserrat", sans-serif;
     font-size: 3rem;
     display: flex;
     align-items: center;
@@ -25,7 +24,6 @@
     border: 1px solid rgb(2, 224, 24);
     color: #000000;
     cursor: pointer;
-    font-family: "Montserrat", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,7 +51,7 @@
     position: relative;
     /* এটি যোগ করা জরুরি */
     min-height: 100vh;
-    /* স্ক্রিন জুড়ে রাখার জন্য */
+    /* স্ক্রিন জুড়ে রাখার জন্য */
 }
 
 /* ব্যাকগ্রাউন্ড ব্লার করার জন্য নতুন ::before ইলিমেন্ট */
@@ -72,11 +70,10 @@
     filter: blur(3px);
     /* এখানে ব্লার এর পরিমাণ (px) আপনার পছন্দমত পরিবর্তন করতে পারবেন */
     z-index: -1;
-    /* জাতে ব্লার হওয়া ব্যাকগ্রাউন্ডটি ফুড কার্ডগুলোর পেছনে থাকে */
+    /* জাতে ব্লার হওয়া ব্যাকগ্রাউন্ডটি ফুড কার্ডগুলোর পেছনে থাকে */
 }
 
 #food-name {
-    font-family: "Manrope", sans-serif;
     cursor: pointer;
     width: 35vw;
     margin: 20px 30px 10px 30px;
@@ -84,7 +81,7 @@
     color: rgb(1, 7, 110);
     border-radius: 30px;
     overflow: hidden;
-    box-shadow: 0px 4px 8px rgb(83, 83, 86);
+    box-shadow: 0px 4px 8px rgb(0, 0, 0);
     transition: 0.2s;
 }
 
@@ -125,7 +122,6 @@ h5 {
 }
 
 #btn {
-    font-family: "Montserrat", sans-serif;
     cursor: pointer;
     width: 100px;
     border: 0px;
@@ -181,7 +177,6 @@ th {
 }
 
 #cart-container {
-    font-family: "Montserrat", sans-serif;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -196,6 +191,7 @@ th {
     background-color: rgb(33, 136, 57);
     animation-name: cart;
     animation-duration: 0.5s;
+    font-family: "Cabin", sans-serif;
 }
 
 @keyframes cart {
@@ -226,7 +222,6 @@ hr {
     height: 30px;
     color: #FFFFFF;
     background-color: #B80B0B;
-    font-family: "Montserrat", sans-serif;
 }
 
 @media only screen and (max-width:500px) {
@@ -235,22 +230,25 @@ hr {
     }
 
     #main-header {
-        background-image: linear-gradient(to right, #EFFEF7, #017951);
+        border: 1px solid rgb(117, 122, 117);
+        box-shadow: inset 1px 1px 10px rgb(134, 195, 124);
+        background: transparent;
+        backdrop-filter: blur(10px);
         margin: 0px auto;
         left: 0;
         right: 0;
         width: 90%;
         position: fixed;
         top: 10px;
-        font-family: "Playwrite CU Guides", cursive;
-        font-size: 1.2rem;
+        font-size: 1rem;
         display: flex;
         align-items: center;
         padding: 0px 30px 0px 30px;
         height: 80px;
         border-radius: 50px;
-        color: #0E6518;
+        color: #064506;
         z-index: 2;
+        font-family: "Original Surfer", sans-serif;
     }
 
     #my-cart {
@@ -259,7 +257,6 @@ hr {
         background-color: #ffffff;
         box-shadow: 0px 1px 3px rgba(0, 64, 39, 1);
         transition: 0.4s;
-        font-family: "Montserrat", sans-serif;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -268,6 +265,7 @@ hr {
         height: 40px;
         border-radius: 20px;
         -webkit-tap-highlight-color: transparent;
+        font-family: "Quicksand", sans-serif;
     }
 
     #my-cart:active {
@@ -289,27 +287,27 @@ hr {
     }
 
     #intro-heading {
-        font-family: "Montserrat", sans-serif;
         padding: 0px 50px 20px 50px;
         font-size: 3rem;
         color: #064615;
         background-image: linear-gradient(rgb(9, 124, 9), rgb(46, 62, 27));
         background-clip: text;
         color: transparent;
+        font-family: "Quicksand", sans-serif;
     }
 
     #description {
-        font-family: "Montserrat", sans-serif;
-        padding: 0px 20px 20px 20px;
+        padding: 0px 20px 50px 40px;
         font-size: 1.2rem;
         color: #03250c;
+        font-family: "Quicksand", sans-serif;
     }
 
     #menu {
         color: #012515;
         text-align: center;
-        font-family: "Montserrat", sans-serif;
         font-size: 1.7rem;
+        font-family: "Cabin", sans-serif;
     }
 
     #my-content {
@@ -324,7 +322,6 @@ hr {
     #my-content::before {
         content: "";
         position: fixed;
-        /* ব্যাকগ্রাউন্ড স্ক্রিনের সাথে ফিক্সড রাখার জন্য */
         top: 0;
         left: 0;
         width: 100%;
@@ -334,15 +331,12 @@ hr {
         background-size: cover;
         background-position: center;
         filter: blur(3px);
-        /* এখানে ব্লার এর পরিমাণ (px) আপনার পছন্দমত পরিবর্তন করতে পারবেন */
         z-index: -1;
-        /* জাতে ব্লার হওয়া ব্যাকগ্রাউন্ডটি ফুড কার্ডগুলোর পেছনে থাকে */
     }
 
 
     #food-name {
         cursor: pointer;
-        font-family: "Manrope", sans-serif;
         width: 93vw;
         margin: 10px 0px 10px 0px;
         position: relative;
@@ -351,6 +345,7 @@ hr {
         overflow: hidden;
         box-shadow: 0px 4px 8px rgb(83, 83, 86);
         -webkit-tap-highlight-color: transparent;
+        font-family: "Cabin", sans-serif;
     }
 
     #food-name::after {
@@ -384,7 +379,6 @@ hr {
     }
 
     #btn {
-        font-family: "Montserrat", sans-serif;
         cursor: pointer;
         border: 0px;
         border-radius: 20px;
@@ -396,19 +390,19 @@ hr {
         bottom: 15px;
         position: absolute;
         background-image: linear-gradient(#012515, #098B60);
-
         color: rgb(226, 245, 235);
         transition: 0s;
-        z-index: 1
+        z-index: 1;
+        font-family: "Quicksand", sans-serif;
     }
 
     #btn:hover {
-        background-color: rgb(5, 122, 46);
+        background-image: linear-gradient(#012515, #098B60);
         color: rgb(226, 245, 235);
     }
 
     #btn:active {
-        background-color: white;
+        background-image: linear-gradient(green, white);
         color: rgb(0, 0, 0);
     }
 
@@ -458,14 +452,17 @@ hr {
         justify-content: center;
         background-color: rgba(210, 255, 242, 1);
         animation-name: cart;
-        animation-duration: 0.5s;
+        animation-duration: 2s;
         z-index: 2;
     }
 
     @keyframes cart {
         from {
-            width: 0px;
-            margin-top: -380px;
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
         }
     }
 
