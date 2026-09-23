@@ -285,7 +285,7 @@ hr {
     }
 
     #intro {
-        height: 50vh;
+        height: auto;
         position: relative;
         margin-top: 15vh;
         background-color: #000000;
@@ -294,9 +294,9 @@ hr {
     #food-intro {
         filter: blur(2px);
         display: block;
-        position: absolute;
+       /* position: relative; */
         width: 100%;
-        height: 100%;
+        height: auto;
     }
 
     #intro::after {
@@ -310,11 +310,12 @@ hr {
     }
 
     #intro-heading {
-        position: absolute;
+        position: absolute; 
         left: 35px;
         right: 25px;
-        top: 60px;
-        font-size: 2.8rem;
+        top: 30px;
+        font-size: 2rem;
+        padding: 0px 0px 90px 0px;
         color: white;
         font-family: "Quicksand", sans-serif;
         z-index: 1;
@@ -325,7 +326,7 @@ hr {
         bottom: 30px;
         left: 40px;
         right: 20px;
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: #e3ebe5;
         font-family: "Quicksand", sans-serif;
         z-index: 1;
