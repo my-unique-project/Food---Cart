@@ -1,6 +1,7 @@
 let my_content = document.querySelector("#my-content");
 let body = document.querySelector("body");
 let myCart = document.querySelector("#my-cart");
+let wrapper = document.querySelector("#wrapper");
 let food = [
     {
         name: "Pizza",
@@ -124,9 +125,11 @@ myCart.addEventListener("click",
             return;
         }
         cartContainer.style.display = "flex";
+        wrapper.style.filter = "blur(10px)";
     }
 )
 
 function closeCart() {
     cartContainer.style.display = "none";
+    wrapper.style.filter = "none";
 }
