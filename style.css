@@ -228,10 +228,9 @@ hr {
         box-sizing: border-box;
     }
 
-    /* 
     body {
-      background-image: linear-gradient( #D9E4DA, #131714,transparent);
-    } */
+        background-color: #deebe5;
+    }
 
     #main-header {
         border: 0.1vw solid rgba(0, 0, 0, 0.373);
@@ -294,9 +293,8 @@ hr {
     #food-intro {
         filter: blur(2px);
         display: block;
-       /* position: relative; */
         width: 100%;
-        height: auto;
+        height: 400px;
     }
 
     #intro::after {
@@ -310,12 +308,12 @@ hr {
     }
 
     #intro-heading {
-        position: absolute; 
+        font-size: 12vw;
+        position: absolute;
         left: 35px;
         right: 25px;
-        top: 30px;
-        font-size: 2rem;
-        padding: 0px 0px 90px 0px;
+        top: 50px;
+        padding: 0px 0px 0px 0px;
         color: white;
         font-family: "Quicksand", sans-serif;
         z-index: 1;
@@ -326,7 +324,7 @@ hr {
         bottom: 30px;
         left: 40px;
         right: 20px;
-        font-size: 1rem;
+        font-size: 4vw;
         color: #e3ebe5;
         font-family: "Quicksand", sans-serif;
         z-index: 1;
@@ -346,8 +344,6 @@ hr {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        /* background-image: linear-gradient(transparent, #D9E4DA, #131714);
-        background-attachment: fixed; */
     }
 
     #my-content::before {
