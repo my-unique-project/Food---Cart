@@ -235,7 +235,6 @@ hr {
         padding: 0;
     }
 
-
     #main-header {
         border: 0.1vw solid rgba(0, 0, 0, 0.373);
         box-shadow: inset 1px 1px 10px rgb(3, 81, 56);
@@ -513,5 +512,38 @@ hr {
     #del-btn:active {
         color: #B30E0E;
         background: #000000;
+    }
+
+    #order-btn {
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: 3vw;
+        border-radius: 50px;
+        justify-content: center;
+        align-items: center;
+        width: 25vw;
+        height: 6vh;
+        margin: 0 auto;
+        color: #feffff;
+        background-color: #06382a;
+        font-family: "Quicksand", sans-serif;
+        animation-name: order;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes order {
+        from {
+            font-size: 3vw;
+            box-shadow: 1px 2px 10px rgb(4, 146, 32);
+        }
+
+        to {
+            font-size: 2.8vw;
+            opacity: 1;
+        }
     }
 }
