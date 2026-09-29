@@ -67,9 +67,7 @@
     background-size: cover;
     background-position: center;
     filter: blur(3px);
-    /* এখানে ব্লার এর পরিমাণ (px) আপনার পছন্দমত পরিবর্তন করতে পারবেন */
     z-index: -1;
-    /* জাতে ব্লার হওয়া ব্যাকগ্রাউন্ডটি ফুড কার্ডগুলোর পেছনে থাকে */
 }
 
 #food-name {
@@ -297,30 +295,22 @@ hr {
 
     #intro-heading {
         padding: 0px 30px 0px 50px;
-        font-size: 12vw;
-        letter-spacing: 4px;
-        color: #d5e0d3;
-        -webkit-text-stroke: 2px #000000;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        z-index: 1;
+        font-size: 10vw;
     }
 
     #description {
-        padding: 50px;
+        text-shadow: 2px 2px 4px rgb(12, 11, 11);
+        padding: 20px;
         font-size: 5vw;
-        color: #050404;
-        font-family: "Quicksand", sans-serif;
-        z-index: 1;
-
+        color: #e4dddd;
     }
 
     #intro-heading-div {
-        width: 100%;
-        height: 100%;
+        font-family: "Quicksand", sans-serif;
+        width: 90%;
+        height: 80%;
         position: absolute;
         top: 0%;
-        /*  
-        background-color: #000000; */
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
