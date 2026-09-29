@@ -317,6 +317,7 @@ hr {
     }
 
     #menu {
+        font-family: "Quicksand", sans-serif;
         text-align: center;
         font-size: 12vw;
         color: #03381d;
@@ -519,12 +520,12 @@ hr {
         bottom: 10px;
         left: 50%;
         transform: translate(-50%);
-        font-size: 3vw;
+        font-size: 4vw;
         border-radius: 50px;
         justify-content: center;
         align-items: center;
-        width: 25vw;
-        height: 6vh;
+        width: 30vw;
+        height: 8vh;
         margin: 0 auto;
         color: #feffff;
         background-color: #06382a;
@@ -537,7 +538,7 @@ hr {
 
     @keyframes order {
         from {
-            font-size: 3vw;
+            font-size: 4vw;
             box-shadow: 1px 2px 10px rgb(4, 146, 32);
         }
 
