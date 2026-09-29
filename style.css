@@ -8,7 +8,7 @@
 #wrapper {
     display: flex;
     flex-direction: column;
-    gap: 30px; 
+    gap: 30px;
 }
 
 #main-header {
@@ -231,7 +231,10 @@ hr {
 @media only screen and (max-width:500px) {
     * {
         box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
+
 
     #main-header {
         border: 0.1vw solid rgba(0, 0, 0, 0.373);
@@ -288,7 +291,7 @@ hr {
         width: 100vw;
         height: 400px;
         position: relative;
-        margin-top: 20vh;
+        margin-top: 15vh;
     }
 
     #imageId {
@@ -323,7 +326,8 @@ hr {
     #intro-heading-div {
         font-family: "Quicksand", sans-serif;
         width: 100%;
-        height: 100%; /* 80% থেকে 100% করা হয়েছে যাতে অ্যারোটি নিচে সঠিক দূরত্বে থাকে */
+        height: 100%;
+        /* 80% থেকে 100% করা হয়েছে যাতে অ্যারোটি নিচে সঠিক দূরত্বে থাকে */
         position: absolute;
         top: 0%;
         display: flex;
@@ -333,6 +337,7 @@ hr {
     }
 
     #my-content {
+        /* background-color: #000000; */
         /* margin-top: 20px; - সরিয়ে দেওয়া হয়েছে */
         display: flex;
         flex-direction: row;
