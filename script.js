@@ -57,6 +57,11 @@ let cartContainer = document.createElement("div");
 cartContainer.id = "cart-container";
 body.appendChild(cartContainer);
 
+let order = document.createElement("div");
+order.id = "order-btn";
+body.appendChild(order);
+order.textContent = "Order Now";
+order.style.display = "none";
 
 cartContainer.style.display = "none";
 
@@ -83,7 +88,6 @@ function addToCart(userSelected) {
     showCart();
 }
 function showCart() {
-
     let totalPrice = 0;
     totalQuantity = 0;
     let cartHTML = `<p id="your-cart-selector">Your Cart</p>
@@ -120,16 +124,19 @@ function showCart() {
 }
 myCart.addEventListener("click",
     () => {
+
         if (cart.length === 0) {
             alert("No item added");
             return;
         }
         cartContainer.style.display = "flex";
         wrapper.style.filter = "blur(10px)";
+        order.style.display = "flex";
     }
 )
 
 function closeCart() {
     cartContainer.style.display = "none";
     wrapper.style.filter = "none";
+    order.style.display = "none";
 }
