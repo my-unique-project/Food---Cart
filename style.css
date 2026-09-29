@@ -251,7 +251,7 @@ hr {
     #my-cart {
         border: 0.1vw solid rgb(2, 224, 24);
         color: #000000;
-        background-color: #ffffff;
+    background-color: #ffffff;
         box-shadow: 0px 1px 3px rgba(0, 64, 39, 1);
         transition: 0.4s;
         display: flex;
@@ -272,16 +272,16 @@ hr {
     }
 
     #my-cart:hover {
-        color: #faf6f5;
-        background-color: #000000;
-        font-size: 0.7rem;
+        color: #000000;
+    background-color: #ffffff;
+        font-size: 0.6rem;
     }
 
     #intro {
         width: 100vw;
         height: 400px;
         position: relative;
-        margin-top: 15vh;
+        margin-top: 20vh;
     }
 
     #imageId {
@@ -315,7 +315,7 @@ hr {
 
     #intro-heading-div {
         font-family: "Quicksand", sans-serif;
-        width: 90%;
+        width: 100%;
         height: 80%;
         position: absolute;
         top: 0%;
