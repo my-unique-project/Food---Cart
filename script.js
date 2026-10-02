@@ -144,6 +144,12 @@ function closeCart() {
 
 order.addEventListener("click",
     async () => {
+        // ১. অর্ডার শুরু হওয়ার সাথে সাথে বাটনটি ডিজেবল করা হচ্ছে
+        order.style.pointerEvents = "none"; // ক্লিক বন্ধ করবে
+        order.style.backgroundColor = "gray";
+        order.style.color = "white";
+        order.textContent = "Processing..."; // টেক্সট পরিবর্তন করা হলো
+
         const backendData = cart.map(
             (item) => {
                 return {
@@ -153,11 +159,19 @@ order.addEventListener("click",
                 };
             });
 
-        const res = await fetch("https://backend-106y.onrender.com/order", {
-            method: 'POST', headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(backendData)
-        })
-        const data = await res.text();
-        document.write(data);
+        // try-finally ব্যবহার করা হয়েছে যাতে কাজ শেষ হলে বাটন আবার আগের অবস্থায় ফিরে আসে
+        try {
+            const res = await fetch("https://backend-106y.onrender.com/order", {
+                method: 'POST', headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(backendData)
+            })
+            const data = await res.text();
+            document.write(data);
+        } finally {
+            // ২. অর্ডার কমপ্লিট (বা ফেইল) হওয়ার পর বাটন আবার ইনেবল করা হচ্ছে
+            order.style.pointerEvents = "auto"; // ক্লিক আবার চালু করা হলো
+            order.style.opacity = "1"; // আগের রঙে ফিরিয়ে আনা হলো
+            order.textContent = "Order Now"; // টেক্সট ঠিক করা হলো
+        }
     }
 )
