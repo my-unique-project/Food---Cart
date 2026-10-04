@@ -6,36 +6,36 @@ let food = [
     {
         name: "Pizza",
         price: "200",
-        image: "https://imgs.search.brave.com/eljUT7mGb_AfZKPrxlyjg87wCWOv_NCnCvfNcegkf4Y/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDEyNDUx/ODY0LmpwZw",
+        image: "https://cdn.pixabay.com/photo/2021/07/19/16/04/pizza-6478478_1280.jpg",
         shop: "Food Village"
     },
     {
         name: "Chicken Satay",
         price: "250",
-        image: "https://imgs.search.brave.com/u4HbG1syhadxW-AEocQSBjKwuBfRG5zVH0aimRhbxFc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTU0/OTE3OTYyL3Bob3Rv/L2NoaWNrZW4tc2F0/YXkuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPVdLM2dyNGwy/WnNnV0JKZmF3a0hC/N2x4RU5xRG41QXo5/aG1XUllfNkZhWXM9",
+        image: "https://cdn.pixabay.com/photo/2019/12/13/11/03/satay-4692718_1280.jpg",
         shop: "Cafe Down Town"
     }, {
         name: "Momos",
         price: "150",
-        image: "https://imgs.search.brave.com/GRxO2DC8t06pD-wCRzHw4a7b78ZimhgMah9DUVPGio4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzE0Lzk0LzM4LzM5/LzM2MF9GXzE0OTQz/ODM5OTFfb3VNT29G/N09mdDQ2MDQwTFU1/MW9BdTNvTmNxcThS/NlUuanBn",
+        image: "https://cdn.pixabay.com/photo/2024/02/20/15/19/ai-generated-8585693_1280.jpg",
         shop: "Nepal's Item"
     },
     {
         name: "Hakka Noodles",
         price: "250",
-        image: "https://imgs.search.brave.com/QA_a2xiSQcNFYSZINOLrOqeL8c5-QAXAMnUA0w1jeq8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA4Lzg3LzUyLzMx/LzM2MF9GXzg4NzUy/MzEyN19CVHhpYUdq/RGkwZnZDenBzUDRm/MzZvdlVGSlRMYllO/cS5qcGc",
+        image: "https://cdn.pixabay.com/photo/2023/05/27/12/39/noodle-soup-8021418_1280.png",
         shop: "D Bapi"
     },
     {
         name: "French Fries",
         price: "130",
-        image: "https://imgs.search.brave.com/erWNPNAbcVYQpHt6oaRHg7qP-qyGnALpdC-FaekWHHg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTM1/MzgwMjE4NC92aWRl/by9zYWx0LWZhbGxp/bmctb250by1mcmVu/Y2gtZnJpZXMtaW4t/c2xvdy1tb3Rpb24t/c2hvdC1vbi1waGFu/dG9tLWZsZXgtNGst/Y2FtZXJhLmpwZz9i/PTEmcz02NDB4NjQw/Jms9MjAmYz1zVWoy/S3JDbERxYU9SQnJj/Wk1CWFVnejhDUndF/bVl4d1dYX3JNT3Zu/OElNPQ",
+        image: "https://cdn.pixabay.com/photo/2016/11/20/09/06/bowl-1842294_1280.jpg",
         shop: "American Village Food"
     },
     {
         name: "Sushi",
         price: "200",
-        image: "https://imgs.search.brave.com/Zmns9xXgxWLAT5VV9sHTmusY0BPMdnZwvmeweAVGmlw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDEzODQx/OTAxLmpwZw",
+        image: "https://cdn.pixabay.com/photo/2020/04/04/15/07/sushi-5002639_1280.jpg",
         shop: "Your Sweets"
     },
 ]
